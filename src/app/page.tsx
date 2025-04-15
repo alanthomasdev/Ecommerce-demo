@@ -212,8 +212,8 @@ const cartItemCount = useSelector((state: RootState) =>
 
         <div>
           <div className=" mt-2 mb-2 ms-4 me-4 grid lg:grid-cols-4 lg:gap-4 md:grid-cols-3 md:gap-4  sm:grid-cols-2 sm:gap-4 justify-center ">
-            {currentItems.map((item) => (
-              <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl  m-2 card2 cursor-pointer">
+            {currentItems.map((item, index) => (
+              <div key={index} className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl  m-2 card2 cursor-pointer">
                 <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-[10rem]">
                   <img src={item.image} alt="profile-picture" />
                 </div>
