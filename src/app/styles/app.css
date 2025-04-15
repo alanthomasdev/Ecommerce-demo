@@ -1,0 +1,122 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .header_image{
+    width: 30%;
+  }
+  
+  .header_image img{
+  
+    height: 60px;
+  }
+  
+  .header_searchbar{
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-dropdown{
+    min-width: 200px;
+    top: 100%;
+    position: absolute;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    color: black;
+    flex-direction: column;
+    font-size: medium;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 300px;
+    overflow: scroll;
+    padding: 10px 0px;
+  }
+  .filter-item{
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter-item:hover{
+    /* scale: 1.05; */
+    background-color: rgb(225, 225, 225);
+  }
+  .filter-section {
+    max-width: 100%;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+   }
+  }
+  .filter-section button {
+  width: max-content;
+  }
+  
+  .BoxStyle{
+    position: 'absolute';
+    top: '50%';
+    left: '50%';
+    transform: 'translate(-50%, -50%)';
+    width: 400;
+    bgcolor: 'background.paper';
+    border: '2px solid #000';
+    boxShadow: 24;
+    p: 4;
+  }
+  
+  
+  
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .categories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #fffbf5;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  
+    &:hover {
+      transition: all 0.2s ease-out;
+      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+      top: -4px;
+      border: 1px solid #cccccc;
+      background-color: white;
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #F08221;;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: transform 0.15s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(2.15);
+    }
+  }
