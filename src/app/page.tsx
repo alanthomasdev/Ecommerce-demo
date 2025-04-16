@@ -21,6 +21,7 @@ const cartItemCount = useSelector((state: RootState) =>
 
   const handleCategoryClick = (category: any) => {
     const newCategory = selectedCategories === category ? "" : category;
+    dispatch(setPage(1)); 
     setSelectedCategories(newCategory);
     dispatch(setCategory(newCategory));
     //  console.log(filteredProducts, 'filter')
@@ -46,6 +47,7 @@ const cartItemCount = useSelector((state: RootState) =>
 
   const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     console.log(e.target.value);
+    dispatch(setPage(1)); 
     dispatch(setSortBy(e.target.value));
     console.log(sortProducts());
   };
