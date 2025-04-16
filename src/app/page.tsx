@@ -46,13 +46,13 @@ const cartItemCount = useSelector((state: RootState) =>
   }, [dispatch]);
 
   const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     dispatch(setPage(1)); 
     dispatch(setSortBy(e.target.value));
-    console.log(sortProducts());
+    // console.log(sortProducts());
   };
 
-  console.log("filteredProducts", filteredProducts);
+  // console.log("filteredProducts", filteredProducts);
 
   // Pagination logic
   const startIndex = (currentPage - 1) * itemsPerPage;
